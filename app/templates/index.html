@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement and Salary Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Placement and Salary Predictor</h1>
+    <form action="/predict_placement" method="post">
+        <label for="ssc_p">Secondary Education Percentage (10th):</label>
+        <input type="text" id="ssc_p" name="ssc_p" required><br><br>
+
+        <label for="hsc_p">Higher Secondary Education Percentage (12th):</label>
+        <input type="text" id="hsc_p" name="hsc_p" required><br><br>
+
+        <label for="degree_p">Degree Percentage:</label>
+        <input type="text" id="degree_p" name="degree_p" required><br><br>
+
+        <label for="etest_p">Employee Test Percentage:</label>
+        <input type="text" id="etest_p" name="etest_p" required><br><br>
+
+        <label for="mba_p">MBA Percentage:</label>
+        <input type="text" id="mba_p" name="mba_p" required><br><br>
+        
+        <label for="degree_t">Degree Type:</label>
+        <select id="degree_t" name="degree_t">
+            <option value="Commerce & Management">Commerce & Management</option>
+            <option value="Science & Technology">Science & Technology</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <label for="workex">Work Experience:</label>
+        <select id="workex" name="workex">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        
+        <label for="specialisation">Specialisation:</label>
+        <select id="specialisation" name="specialisation">
+            <option value="Mkt & Fin">Mkt & Fin</option>
+            <option value="Mkt & Hr">Mkt & Hr</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict Placement and Salary">
+    </form>
+</body>
+</html>
